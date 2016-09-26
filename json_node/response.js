@@ -14,7 +14,7 @@ Response.client = new rpc.Client({
 
 Response.getResponse = function(method,data,callback){
 	var resp;
-	Response[client].call({
+	Response["client"].call({
 		"jsonrpc": "2.0",
 		"method" : method,
 		"params" : data,
@@ -28,7 +28,7 @@ Response.getResponse = function(method,data,callback){
 			error: true,
 			data : res.error.message
 		})
-		else callbacl(null , {
+		else callback(null , {
 			error: false,
 			data: res.result
 		})	
@@ -39,6 +39,12 @@ Response.getResponseSync = function(method,data){
 	var resp = wait.for(Response.getResponse,method,data);
 	if (resp.error) throw resp.data;
 	return resp.data
+}
+
+Response.getAccounts = function(){
+	return this.runInTryCatch(function(data){
+		data.data = Response.getResponseSync("eth_accounts",[]);
+	});
 }
 
 Response.getBalance = function(addr){
