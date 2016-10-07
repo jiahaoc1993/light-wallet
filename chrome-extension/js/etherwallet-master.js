@@ -15,7 +15,7 @@
     var ajaxReq = function () {};
     ajaxReq.http = null;
     ajaxReq.postSerializer = null;
-    ajaxReq.SERVERURL = "https://172.22.28.148";
+    ajaxReq.SERVERURL = "https://172.22.28.148/api.mew";
     ajaxReq.COINMARKETCAPAPI = "https://coinmarketcap-nexuist.rhcloud.com/api/";
     ajaxReq.pendingPosts = [];
     ajaxReq.config = {
@@ -2252,8 +2252,8 @@
     app.controller('viewWalletCtrl', ['$scope', 'walletService', viewWalletCtrl]);
     app.controller('sendTxCtrl', ['$scope', '$sce', 'walletService', sendTxCtrl]);
     app.controller('deployContractCtrl', ['$scope', '$sce', 'walletService', deployContractCtrl]);
-    app.controller('digixCtrl', ['$scope', '$sce', 'walletService', digixCtrl]);
-    app.controller('theDaoCtrl', ['$scope', '$sce', 'walletService', theDaoCtrl]);
+    //app.controller('digixCtrl', ['$scope', '$sce', 'walletService', digixCtrl]);
+    //app.controller('theDaoCtrl', ['$scope', '$sce', 'walletService', theDaoCtrl]);
     app.controller('tokenCtrl', ['$scope', '$sce', 'walletService', tokenCtrl]);
     app.controller('footerCtrl', ['$scope', footerCtrl]);
     app.controller('sendOfflineTxCtrl', ['$scope', '$sce', 'walletService', sendOfflineTxCtrl]);
@@ -2582,36 +2582,22 @@
           mew: true,
           cx: false
         },
-        dao: {
-          id: 7,
-          name: "NAV_WithdrawDAO",
-          url: "the-dao",
-          mew: true,
-          cx: true
-        },
-        digix: {
-          id: 8,
-          name: "NAV_ClaimDGD",
-          url: "digix",
-          mew: true,
-          cx: true
-        },
         deployContract: {
-          id: 9,
+          id: 7,
           name: "NAV_DeployContract",
           url: "deploy-contract",
           mew: true,
           cx: true
         },
         viewWalletInfo: {
-          id: 10,
+          id: 8,
           name: "NAV_ViewWallet",
           url: "view-wallet-info",
           mew: true,
           cx: false
         },
         help: {
-          id: 11,
+          id: 9,
           name: "NAV_Help",
           url: "help",
           mew: true,

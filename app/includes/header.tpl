@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>MyEtherWallet: Open Source JavaScript Client-Side Ether Wallet</title>
-  <link rel="canonical" href="https://www.myetherwallet.com" />
-  <meta name="description" content="Ether Wallet: Open Source JavaScript Client-Side Ether Wallet">
+ <!-- <link rel="canonical" href="https://www.myetherwallet.com" /> -->
+ <meta name="description" content="Ether Wallet: Open Source JavaScript Client-Side Ether Wallet">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/etherwallet-master.min.css">
@@ -33,7 +33,6 @@
 @@if (site === 'mew' ) {
   <header ng-controller='tabsCtrl'>
     <a href="https://www.reddit.com/r/ethereum/comments/47nkoi/psa_check_your_ethaddressorg_wallets_and_any/d0eo45o" class="small announcement annoucement-warning" target="_blank">
-      <div class="container" translate="MEW_Warning_1">Always check the URL before accessing your wallet or creating a new wallet. Beware of phishing sites!</div>
     </a>
     <section class="container-fluid bg-gradient header-branding">
       <section class="container">
