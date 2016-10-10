@@ -1,7 +1,7 @@
 <!-- Send Transaction Page -->
 <article class="tab-pane active" ng-if="globalService.currentTab==globalService.tabs.deployContract.id" ng-controller='deployContractCtrl'>
 
-  <h2 translate="NAV_DeployContract"> Deploy Contractaaa </h2>
+  <h2 translate="NAV_DeployContract"> Deploy Contract </h2>
 
   <section class="row" >
 

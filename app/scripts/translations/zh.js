@@ -47,8 +47,8 @@ zh.data = {
   /* Header */
   MEW_Warning_1:        '使用或者创建新钱包之前，一定要检查下网址是否正确。小心钓鱼网址！',
   CX_Warning_1:         '确保你备份了保存在这里的所有钱包。 许多事情包括卸载和重装扩展，都将使你丢失Chrome扩展中的数据。这个扩展是一种使用钱包的简单方式，但不是备份钱包的方式。',
-  MEW_Tagline:          '开源JavaScript客户端以太币钱包',
-  CX_Tagline:           '开源JavaScript客户端以太币钱包Chrome扩展',
+  MEW_Tagline:          '以太币钱包',
+  CX_Tagline:           '以太币钱包Chrome扩展',
 
   /* Footer */
   FOOTER_1:             '一个开源的生成以太坊钱包和发送交易的JavaScript客户端工具',

@@ -2,9 +2,9 @@
 <html lang="en" ng-app="mewApp">
 <head>
   <meta charset="utf-8">
-  <title>MyEtherWallet: Open Source JavaScript Client-Side Ether Wallet</title>
- <!-- <link rel="canonical" href="https://www.myetherwallet.com" /> -->
- <meta name="description" content="Ether Wallet: Open Source JavaScript Client-Side Ether Wallet">
+  <title>以太坊钱包</title>
+  <link rel="canonical" href="https://www.myetherwallet.com" />
+  <meta name="description" content="Ether Wallet">
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/etherwallet-master.min.css">
@@ -32,27 +32,42 @@
 
 @@if (site === 'mew' ) {
   <header ng-controller='tabsCtrl'>
-    <a href="https://www.reddit.com/r/ethereum/comments/47nkoi/psa_check_your_ethaddressorg_wallets_and_any/d0eo45o" class="small announcement annoucement-warning" target="_blank">
+	<!--
+    <a class="small announcement annoucement-warning" target="_blank">
+      <div class="container" translate="MEW_Warning_1">Always check the URL before accessing your wallet or creating a new wallet. Beware of phishing sites!</div>
     </a>
+	-->
     <section class="container-fluid bg-gradient header-branding">
       <section class="container">
-        <a class="brand" href="https://www.myetherwallet.com/"><img src="images/etherwallet-logo.svg" height="64px" width="auto" alt="My Ether Wallet" /></a>
+        <a class="brand"><img src="images/etherwallet-logo.svg" height="64px" width="auto" alt="My Ether Wallet" />
+        <span style="max-width: 375px" translate="MEW_Tagline">Ether Wallet</span>
+		&middot; v1.0 &middot;
+		</a>
         <div class="tagline">
-          <span style="max-width: 375px" translate="MEW_Tagline">Open Source JavaScript Client-Side Ether Wallet</span>
+          <!--
+		  <span style="max-width: 375px" translate="MEW_Tagline">Ether Wallet</span>
+		  -->
 }
 
 @@if (site === 'cx' ) {
   <header ng-controller='tabsCtrl'>
-    <a href="" class="small announcement annoucement-warning" target="_blank">
+	<!--
+    <a class="small announcement annoucement-warning" target="_blank">
       <div class="container" translate="CX_Warning_1">Make sure you have <strong>external backups</strong> of any wallets you store here. Many things could happen that would cause you to lose the data in this Chrome Extension, including uninstalling and reinstalling the extension. This extension is a way to easily access your wallets, <strong>not</strong> a way to back them up.</div>
     </a>
+	-->
     <section class="container-fluid bg-gradient header-branding">
       <section class="container">
-        <a class="brand" href="/cx-wallet.html"><img src="images/etherwalletcx-logo.svg" height="64px" width="auto" alt="My Ether Wallet" /></a>
+        <a class="brand" href="/cx-wallet.html"><img src="images/etherwalletcx-logo.svg" height="64px" width="auto" alt="My Ether Wallet" />
+        <span style="max-width: 375px" translate="CX_Tagline">Ether Wallet Chrome Extension</span>
+		&middot; v1.0 &middot;
+		</a>
         <div class="tagline">
-          <span style="max-width: 375px" translate="CX_Tagline">Open Source JavaScript Client-Side Ether Wallet Chrome Extension</span>
+		  <!--
+          <span style="max-width: 375px" translate="CX_Tagline">Ether Wallet Chrome Extension</span>
+		  -->
 }
-        &middot; v3.0 &middot;
+        <!-- &middot; v1.0 &middot; -->
         <span class="dropdown">
           <a href="#" class="dropdown-toggle" ng-click="dropdown = !dropdown"> {{curLang}} <span class="caret"></span></a>
           <ul class="dropdown-menu" ng-show="dropdown" style="display:none;" id="langDrop">
