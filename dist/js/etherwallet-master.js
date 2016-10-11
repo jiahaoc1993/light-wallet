@@ -15,7 +15,7 @@
     var ajaxReq = function () {};
     ajaxReq.http = null;
     ajaxReq.postSerializer = null;
-    ajaxReq.SERVERURL = "https://172.22.28.148";
+    ajaxReq.SERVERURL = "https://172.22.28.143/api.mew";
     ajaxReq.COINMARKETCAPAPI = "https://coinmarketcap-nexuist.rhcloud.com/api/";
     ajaxReq.pendingPosts = [];
     ajaxReq.config = {
@@ -2533,6 +2533,16 @@
       ajaxReq.postSerializer = $httpParamSerializerJQLike;
 
       var tabs = {
+
+        /*
+        mainPage: {
+          id: 0,
+          name: "NAV_MainPage",
+          url: "main-page",
+          mew: true,
+          cx: false
+        },
+        */
         generateWallet: {
           id: 0,
           name: "NAV_GenerateWallet",
@@ -2582,40 +2592,38 @@
           mew: true,
           cx: false
         },
-        dao: {
-          id: 7,
-          name: "NAV_WithdrawDAO",
-          url: "the-dao",
-          mew: true,
-          cx: true
-        },
-        digix: {
-          id: 8,
-          name: "NAV_ClaimDGD",
-          url: "digix",
-          mew: true,
-          cx: true
-        },
+        /*
+           dao: {
+             id: 7,
+             name: "NAV_WithdrawDAO",
+             url: "the-dao",
+             mew: true,
+             cx: true
+           },
+        
+           digix: {
+             id: 8,
+             name: "NAV_ClaimDGD",
+             url: "digix",
+             mew: true,
+             cx: true
+           },
+        */
         deployContract: {
-          id: 9,
+          //id: 9,
+          id: 7,
           name: "NAV_DeployContract",
           url: "deploy-contract",
           mew: true,
           cx: true
         },
         viewWalletInfo: {
-          id: 10,
+          //id: 10,
+          id: 8,
           name: "NAV_ViewWallet",
           url: "view-wallet-info",
           mew: true,
           cx: false
-        },
-        help: {
-          id: 11,
-          name: "NAV_Help",
-          url: "help",
-          mew: true,
-          cx: true
         }
       };
       var currentTab = 0;
@@ -3860,6 +3868,9 @@
       NAV_ViewWallet: 'View Wallet Info',
       NAV_Help: 'Help',
       NAV_Contact: 'Contact',
+      //Add a main page
+      //Change by Hatuw
+      NAV_MainPage: 'Main Page',
 
       /* General */
       x_Address: 'Your Address',
@@ -3886,8 +3897,8 @@
       /* Header */
       MEW_Warning_1: 'Always check the URL before accessing your wallet or creating a new wallet. Beware of phishing sites!',
       CX_Warning_1: 'Make sure you have **external backups** of any wallets you store here. Many things could happen that would cause you to lose the data in this Chrome Extension, including uninstalling and reinstalling the extension. This extension is a way to easily access your wallets, **not** a way to back them up.',
-      MEW_Tagline: 'Open Source JavaScript Client-Side Ether Wallet',
-      CX_Tagline: 'Open Source JavaScript Client-Side Ether Wallet Chrome Extension',
+      MEW_Tagline: 'Ether Wallet',
+      CX_Tagline: 'Ether Wallet Chrome Extension',
 
       /* Footer */
       FOOTER_1: 'An open source, javascript, client-side tool for generating Ethereum Wallets & sending transactions.',
@@ -11137,8 +11148,8 @@
       /* Header */
       MEW_Warning_1: '使用或者创建新钱包之前，一定要检查下网址是否正确。小心钓鱼网址！',
       CX_Warning_1: '确保你备份了保存在这里的所有钱包。 许多事情包括卸载和重装扩展，都将使你丢失Chrome扩展中的数据。这个扩展是一种使用钱包的简单方式，但不是备份钱包的方式。',
-      MEW_Tagline: '开源JavaScript客户端以太币钱包',
-      CX_Tagline: '开源JavaScript客户端以太币钱包Chrome扩展',
+      MEW_Tagline: '以太币钱包',
+      CX_Tagline: '以太币钱包Chrome扩展',
 
       /* Footer */
       FOOTER_1: '一个开源的生成以太坊钱包和发送交易的JavaScript客户端工具',

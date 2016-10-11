@@ -5,6 +5,16 @@ var globalService = function($http, $httpParamSerializerJQLike) {
     ajaxReq.postSerializer = $httpParamSerializerJQLike;
 
   var tabs = {
+
+	/*
+	mainPage: {
+	  id: 0,
+	  name: "NAV_MainPage",
+	  url: "main-page",
+	  mew: true,
+	  cx: false
+	},
+	*/
     generateWallet: {
       id: 0,
       name: "NAV_GenerateWallet",
@@ -54,6 +64,7 @@ var globalService = function($http, $httpParamSerializerJQLike) {
       mew: true,
       cx: false
     },
+	/*
     dao: {
       id: 7,
       name: "NAV_WithdrawDAO",
@@ -61,6 +72,7 @@ var globalService = function($http, $httpParamSerializerJQLike) {
       mew: true,
       cx: true
     },
+	
     digix: {
       id: 8,
       name: "NAV_ClaimDGD",
@@ -68,27 +80,33 @@ var globalService = function($http, $httpParamSerializerJQLike) {
       mew: true,
       cx: true
     },
+	*/
     deployContract: {
-      id: 9,
+      //id: 9,
+	  id: 7,
       name: "NAV_DeployContract",
       url: "deploy-contract",
       mew: true,
       cx: true
     },
     viewWalletInfo: {
-      id: 10,
+      //id: 10,
+	  id: 8,
       name: "NAV_ViewWallet",
       url: "view-wallet-info",
       mew: true,
       cx: false
     },
+	/*
     help: {
-      id: 11,
+      //id: 11,
+	  id: 9,
       name: "NAV_Help",
       url: "help",
       mew: true,
       cx: true
     }
+	*/
   };
   var currentTab = 0;
   if(typeof chrome != 'undefined')

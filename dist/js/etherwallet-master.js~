@@ -15,7 +15,7 @@
     var ajaxReq = function () {};
     ajaxReq.http = null;
     ajaxReq.postSerializer = null;
-    ajaxReq.SERVERURL = "https://172.22.28.143/api.mew";
+    ajaxReq.SERVERURL = "https://172.22.28.148";
     ajaxReq.COINMARKETCAPAPI = "https://coinmarketcap-nexuist.rhcloud.com/api/";
     ajaxReq.pendingPosts = [];
     ajaxReq.config = {
@@ -2624,6 +2624,14 @@
           url: "view-wallet-info",
           mew: true,
           cx: false
+        },
+        help: {
+          //id: 11,
+          id: 9,
+          name: "NAV_Help",
+          url: "help",
+          mew: true,
+          cx: true
         }
       };
       var currentTab = 0;
