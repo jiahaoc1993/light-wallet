@@ -96,7 +96,7 @@ zh.data = {
   GEN_Label_1:            '输入一个强密码（至少9位）',
   GEN_Placeholder_1:      '不要忘记保存！',
   GEN_SuccessMsg:         '成功！你的钱包已经生成。',
-  GEN_Warning:            '将来使用钱包时，你需要Keystore/JSON文件或者私钥。 请做好保存和备份。 如果你没有保存，没有办法恢复钱包。 请阅读[帮助页面](https://www.myetherwallet.com/#help)，获得更多信息。',
+  GEN_Warning:            '将来使用钱包时，你需要Keystore/JSON文件或者私钥。 请做好保存和备份。 如果你没有保存，没有办法恢复钱包。',
   GEN_Label_2:            '保存你的Keystore/JSON或者私钥。不要忘记你的密码。',
   GEN_Label_3:            '保存你的地址。',
   GEN_Label_4:            '打印你的纸钱包，或者存储二维码。（可选）',
