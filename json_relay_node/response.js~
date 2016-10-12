@@ -6,13 +6,13 @@ var wait = require('wait.for');
 var Response = function() {}
 Response.client = new rpc.Client({
 	port: 8545,
-	host: '172.22.28.148',
+	host: '172.22.28.123',
 	path: '/',
 	strict: true
 });
 Response.clientClassic = new rpc.Client({
 	port: 8545,
-	host: '172.22.28.148',//change later
+	host: '172.22.28.123',//change later
 	path: '/',
 	strict: true
 });
