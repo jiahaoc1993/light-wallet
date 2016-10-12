@@ -242,7 +242,7 @@ body {
 	line-height:1.42857143;
 	color:#f39b03;
 	/*! background-color:#212121; */
-	background: linear-gradient(to left,#000000E6,#2A2A2AE6,#000000E6);
+	background: linear-gradient(to left,#212121,#444,#212121);
 }
 button,input,select,textarea {
 	font-family:inherit;
