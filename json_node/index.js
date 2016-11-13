@@ -13,11 +13,11 @@ app.use(bodyParser.urlencoded({
 	extended: true
 }));
 
-app.get('/',function(req,res){
+app.get('/api.mew',function(req,res){
 	wait.launchFiber(handleRequest,req,res);
 });
 
-app.post('/',function(req,res){
+app.post('/api.mew',function(req,res){
 	wait.launchFiber(handleRequest,req,res);
 });
 
@@ -26,9 +26,10 @@ var handleRequest = function(req,res){
 	res.header('Content-Type','application/json');
 	referer = req.header('Referer');
 	req = req.body;
-	res.send(response.getAccounts());
+	console.log(req)
+	//res.send(response.getAccounts());
 	//res.send(response.getCurrentBlock());
-	/*
+	
 	if ("balance" in req) res.write(response.getBalance(req["balance"]));
 	else if ("rawtx" in req) res.write(response.sendRawTransaction(req["rawtx"]));
 	else if ("txdata" in req) res.write(response.getTransactionData(req["txdata"]));
@@ -37,6 +38,6 @@ var handleRequest = function(req,res){
 	else if ("currentBlock" in req) res.write(response.getCurrentBlock());
 	else res.status(400).send();
 	res.end()
-	*/
+
 }
 exports.app = app;

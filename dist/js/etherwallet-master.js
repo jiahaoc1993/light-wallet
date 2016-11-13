@@ -15,7 +15,7 @@
     var ajaxReq = function () {};
     ajaxReq.http = null;
     ajaxReq.postSerializer = null;
-    ajaxReq.SERVERURL = "https://172.22.28.148/api.mew";
+    ajaxReq.SERVERURL = "https://192.168.246.129/api.mew";
     ajaxReq.COINMARKETCAPAPI = "https://coinmarketcap-nexuist.rhcloud.com/api/";
     ajaxReq.pendingPosts = [];
     ajaxReq.config = {

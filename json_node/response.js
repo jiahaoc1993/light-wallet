@@ -7,7 +7,7 @@ var Response = function(){}
 
 Response.client = new rpc.Client({
 	port: 8545,
-	host: '172.22.28.120',
+	host: '192.168.246.129',
 	path: '/',
 	strict: true
 });
