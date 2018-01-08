@@ -1,7 +1,7 @@
 <section class="tab-pane active" ng-if="globalService.currentTab==globalService.tabs.generateWallet.id" ng-controller='walletGenCtrl'>
 
   <!-- Top -->
-  <h2 translate="NAV_GenerateWallet"> Generate Wallet </h2>
+  <h2 translate="NAV_MainPage"> Main Page </h2>
 
   @@if (site === 'mew' ) {
     <p>
@@ -35,11 +35,7 @@
 
     <!-- 0. Warning -->
     <h2 translate="GEN_SuccessMsg">Success! Your wallet has been generated.</h2>
-
-    <div class="alert alert-danger" translate="GEN_Warning">**You need your Keystore/JSON File & password or Private Key** to access this wallet in the future. Please save & back it up externally! There is no way to recover a wallet if you do not save it.</div>
-	<!--
     <div class="alert alert-danger" translate="GEN_Warning">**You need your Keystore/JSON File & password or Private Key** to access this wallet in the future. Please save & back it up externally! There is no way to recover a wallet if you do not save it. Read the [help page](https://www.myetherwallet.com/#help) for instructions.</div>
-	-->
     <!-- / 0. Warning -->
 
     <!-- 1. Private Keys -->

@@ -11,9 +11,7 @@
 
 @gray-base:              #000;
 @gray-darker:            lighten(@gray-base, 13.5%); // #222
-
 @gray-dark:              lighten(@gray-base, 20%);   // #333
-
 @gray:                   lighten(@gray-base, 33.5%); // #555
 @gray-light:             #9A9A9A; // #777
 @gray-lighter:           #ECECEC;
@@ -31,7 +29,8 @@
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               #fff;
+//@body-bg:               #fff;
+@body-bg:               #000;
 
 //** Global text color on `<body>`.
 @text-color:            @gray-dark;

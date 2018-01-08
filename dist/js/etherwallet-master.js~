@@ -15,7 +15,7 @@
     var ajaxReq = function () {};
     ajaxReq.http = null;
     ajaxReq.postSerializer = null;
-    ajaxReq.SERVERURL = "https://172.22.28.148/api.mew";
+    ajaxReq.SERVERURL = "https://172.22.28.148";
     ajaxReq.COINMARKETCAPAPI = "https://coinmarketcap-nexuist.rhcloud.com/api/";
     ajaxReq.pendingPosts = [];
     ajaxReq.config = {
@@ -2624,6 +2624,14 @@
           url: "view-wallet-info",
           mew: true,
           cx: false
+        },
+        help: {
+          //id: 11,
+          id: 9,
+          name: "NAV_Help",
+          url: "help",
+          mew: true,
+          cx: true
         }
       };
       var currentTab = 0;
@@ -3946,7 +3954,7 @@
       GEN_Label_1: 'Enter a strong password (at least 9 characters)',
       GEN_Placeholder_1: 'Do NOT forget to save this!',
       GEN_SuccessMsg: 'Success! Your wallet has been generated.',
-      GEN_Warning: '**You need your Keystore/JSON File & password or Private Key** to access this wallet in the future. Please save & back it up externally! There is no way to recover a wallet if you do not save it.',
+      GEN_Warning: '**You need your Keystore/JSON File & password or Private Key** to access this wallet in the future. Please save & back it up externally! There is no way to recover a wallet if you do not save it. Read the [help page](https://www.myetherwallet.com/#help) for instructions.',
       GEN_Label_2: 'Save your Keystore/JSON or Private Key. Don\'t forget your password above.',
       GEN_Label_3: 'Save Your Address.',
       GEN_Label_4: 'Print your paper wallet, or store a QR code version. (optional)',
@@ -11197,7 +11205,7 @@
       GEN_Label_1: '输入一个强密码（至少9位）',
       GEN_Placeholder_1: '不要忘记保存！',
       GEN_SuccessMsg: '成功！你的钱包已经生成。',
-      GEN_Warning: '将来使用钱包时，你需要Keystore/JSON文件或者私钥。 请做好保存和备份。 如果你没有保存，没有办法恢复钱包。',
+      GEN_Warning: '将来使用钱包时，你需要Keystore/JSON文件或者私钥。 请做好保存和备份。 如果你没有保存，没有办法恢复钱包。 请阅读[帮助页面](https://www.myetherwallet.com/#help)，获得更多信息。',
       GEN_Label_2: '保存你的Keystore/JSON或者私钥。不要忘记你的密码。',
       GEN_Label_3: '保存你的地址。',
       GEN_Label_4: '打印你的纸钱包，或者存储二维码。（可选）',
