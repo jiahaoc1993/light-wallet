@@ -47,8 +47,8 @@ zh.data = {
   /* Header */
   MEW_Warning_1:        '使用或者创建新钱包之前，一定要检查下网址是否正确。小心钓鱼网址！',
   CX_Warning_1:         '确保你备份了保存在这里的所有钱包。 许多事情包括卸载和重装扩展，都将使你丢失Chrome扩展中的数据。这个扩展是一种使用钱包的简单方式，但不是备份钱包的方式。',
-  MEW_Tagline:          '开源JavaScript客户端以太币钱包',
-  CX_Tagline:           '开源JavaScript客户端以太币钱包Chrome扩展',
+  MEW_Tagline:          '以太币钱包',
+  CX_Tagline:           '以太币钱包Chrome扩展',
 
   /* Footer */
   FOOTER_1:             '一个开源的生成以太坊钱包和发送交易的JavaScript客户端工具',
@@ -96,7 +96,7 @@ zh.data = {
   GEN_Label_1:            '输入一个强密码（至少9位）',
   GEN_Placeholder_1:      '不要忘记保存！',
   GEN_SuccessMsg:         '成功！你的钱包已经生成。',
-  GEN_Warning:            '将来使用钱包时，你需要Keystore/JSON文件或者私钥。 请做好保存和备份。 如果你没有保存，没有办法恢复钱包。 请阅读[帮助页面](https://www.myetherwallet.com/#help)，获得更多信息。',
+  GEN_Warning:            '将来使用钱包时，你需要Keystore/JSON文件或者私钥。 请做好保存和备份。 如果你没有保存，没有办法恢复钱包。',
   GEN_Label_2:            '保存你的Keystore/JSON或者私钥。不要忘记你的密码。',
   GEN_Label_3:            '保存你的地址。',
   GEN_Label_4:            '打印你的纸钱包，或者存储二维码。（可选）',

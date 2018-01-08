@@ -21,6 +21,9 @@ en.data = {
   NAV_ViewWallet:       'View Wallet Info',
   NAV_Help:             'Help',
   NAV_Contact:          'Contact',
+//Add a main page
+//Change by Hatuw
+  NAV_MainPage:			'Main Page',
 
   /* General */
   x_Address:            'Your Address',
@@ -47,8 +50,8 @@ en.data = {
   /* Header */
   MEW_Warning_1:        'Always check the URL before accessing your wallet or creating a new wallet. Beware of phishing sites!',
   CX_Warning_1:         'Make sure you have **external backups** of any wallets you store here. Many things could happen that would cause you to lose the data in this Chrome Extension, including uninstalling and reinstalling the extension. This extension is a way to easily access your wallets, **not** a way to back them up.',
-  MEW_Tagline:          'Open Source JavaScript Client-Side Ether Wallet',
-	CX_Tagline:           'Open Source JavaScript Client-Side Ether Wallet Chrome Extension',
+  MEW_Tagline:          'Ether Wallet',
+	CX_Tagline:           'Ether Wallet Chrome Extension',
 
   /* Footer */
   FOOTER_1:             'An open source, javascript, client-side tool for generating Ethereum Wallets & sending transactions.',
@@ -96,7 +99,7 @@ en.data = {
   GEN_Label_1:            'Enter a strong password (at least 9 characters)',
   GEN_Placeholder_1:      'Do NOT forget to save this!',
   GEN_SuccessMsg:         'Success! Your wallet has been generated.',
-  GEN_Warning:            '**You need your Keystore/JSON File & password or Private Key** to access this wallet in the future. Please save & back it up externally! There is no way to recover a wallet if you do not save it. Read the [help page](https://www.myetherwallet.com/#help) for instructions.',
+  GEN_Warning:            '**You need your Keystore/JSON File & password or Private Key** to access this wallet in the future. Please save & back it up externally! There is no way to recover a wallet if you do not save it.',
   GEN_Label_2:            'Save your Keystore/JSON or Private Key. Don\'t forget your password above.',
   GEN_Label_3:            'Save Your Address.',
   GEN_Label_4:            'Print your paper wallet, or store a QR code version. (optional)',
